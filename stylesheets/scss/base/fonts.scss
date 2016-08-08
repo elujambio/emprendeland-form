@@ -1,0 +1,26 @@
+html, 
+body
+{
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: 'M+';
+}
+
+@font-face {
+	font-family: 'M+';
+	src: url('../../fonts/mplus-2c-light.ttf');
+	font-weight: 200;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'M+';
+	src: url('../../fonts/mplus-2c-medium.ttf');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'M+';
+	src: url('../../fonts/mplus-2c-regular.ttf');
+	font-weight: 500;
+	font-style: normal;
+}

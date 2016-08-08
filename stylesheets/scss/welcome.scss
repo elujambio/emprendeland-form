@@ -1,0 +1,119 @@
+@import 'base/normalize.scss';
+@import 'base/fonts.scss';
+
+body, 
+html { 
+	height:100%; 
+	width:100%; 	
+}
+
+#logo {
+	position:fixed; 
+	top:24px; 
+	left:24px;
+	z-index:100;
+}
+#navigation {
+	display:flex;
+	flex-direction:row; 
+	align-items:center; 
+	justify-content:space-between; 
+	padding-left:24px; 
+	padding-right:24px; 
+	width:100%; 
+	padding-bottom:72px; 
+	position:fixed; 
+	bottom:0; left:0;
+	// opacity:0;
+	img {
+		position:absolute; 
+	}
+	#back {
+		left:24px;
+		opacity:.33;
+	}
+	#next {
+		right:24px;
+	}
+	#check {
+		right:24px; 
+		opacity:0;
+	}
+}
+
+
+#interface {
+	display:flex; 
+	flex-direction:column; 
+	justify-content:flex-start;
+	align-items:flex-start; 
+	height:100%; 
+	width:100%; 
+	// background: linear-gradient(227.1deg, rgba(255, 177, 130, 1) 0%, rgba(137, 127, 255, 1) 74.15%);
+	background: linear-gradient(45deg, #897fff 70%,#ffb182 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	position:relative; 
+	// padding-left:24px;
+	// padding-right:24px;
+	padding-top:168px; // 24 + 72 + 72px, body padding, logo height, content padding
+	// padding-bottom:
+	#intro {
+		height:100%; 
+		width:100%; 
+		padding-left:24px; 
+		padding-right:24px;
+		display:flex; 
+		flex-direction:column; 
+		justify-content:space-between;
+		position:relative;
+		// z-index:1;
+		// justify-content
+		h1 {
+			position:relative; 
+			z-index:1;
+			color:white;
+			font-size:48px;
+			line-height:57.6px;
+		}
+		a {
+			background:white; 
+			border-radius:5px; 
+			padding:18px; 
+			font-size:14px; 
+			overflow:hidden; 
+			text-transform: uppercase;
+			color:#c8c8c8;
+			margin-bottom:48px;
+		}
+		img {
+			position:fixed; 
+			bottom:0; 
+			left:calc(50% - 90px); 
+			width:180px;
+			z-index:0;
+		}
+	}
+}
+#user-info {
+	height:100%; 
+	width:100%; 
+	padding-left:24px; 
+	padding-right:24px;
+	display:flex; 
+	flex-direction:column; 
+	justify-content:space-between;
+	position:relative;
+	// z-index:1;
+	// justify-content
+	h1 {
+		position:relative; 
+		z-index:1;
+		color:white;
+		font-size:48px;
+		line-height:57.6px;
+		display:inline-block; 
+		div {
+			display:inline-block;
+			opacity:.33;
+		}
+	}
+}

@@ -1,0 +1,240 @@
+/*	FLEXIE FRAMEWORK	*/
+/*	PABLO E. LUJAMBIO 	*/
+/*  RESET 				*/
+/* This part resets several stylesheet characteristics that are practical to reset. */
+* {
+  -webkit-tap-highlight-color: transparent;
+  outline: 0;
+  margin: 0 0;
+  padding: 0 0;
+  width: auto;
+  height: auto;
+  text-decoration: none;
+  font-weight: normal;
+  background: none;
+  border: medium none;
+  border-spacing: 0;
+  font-weight: normal;
+  text-decoration: none;
+  text-indent: 0;
+  overflow: none;
+  box-sizing: border-box;
+  position: relative; }
+
+section {
+  display: block; }
+
+a {
+  color: #FAFAFA; }
+
+html,
+body {
+  height: 100%;
+  width: 100%; }
+
+title, script {
+  display: none; }
+
+span {
+  margin: 0;
+  padding: 0; }
+
+/* INPUT FORMS RESET */
+textarea,
+select,
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  border-radius: 0;
+  background-color: none;
+  color: none;
+  outline: 0;
+  margin: none;
+  padding: none;
+  text-align: left;
+  font-size: 1em;
+  height: auto;
+  vertical-align: middle;
+  border-width: none; }
+
+input:not([type="checkbox"]) {
+  -webkit-appearance: none; }
+
+/*		FONT-SIZES 		*/
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'M+'; }
+
+@font-face {
+  font-family: 'M+';
+  src: url("../../fonts/mplus-2c-light.ttf");
+  font-weight: 200;
+  font-style: normal; }
+@font-face {
+  font-family: 'M+';
+  src: url("../../fonts/mplus-2c-medium.ttf");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'M+';
+  src: url("../../fonts/mplus-2c-regular.ttf");
+  font-weight: 500;
+  font-style: normal; }
+body,
+html {
+  height: 100%;
+  width: 100%; }
+
+#logo {
+  position: fixed;
+  top: 24px;
+  left: 24px;
+  z-index: 100; }
+
+#navigation {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 24px;
+  padding-right: 24px;
+  width: 100%;
+  padding-bottom: 72px;
+  position: fixed;
+  bottom: 0;
+  left: 0; }
+  #navigation img {
+    position: absolute; }
+  #navigation #back {
+    left: 24px;
+    opacity: .33; }
+  #navigation #next {
+    right: 24px; }
+  #navigation #check {
+    right: 24px;
+    opacity: 0; }
+
+#interface {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 100%;
+  width: 100%;
+  background: -webkit-linear-gradient(45deg, #897fff 70%, #ffb182 100%);
+  background: linear-gradient(45deg, #897fff 70%, #ffb182 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  position: relative;
+  padding-top: 168px; }
+  #interface #intro {
+    height: 100%;
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative; }
+    #interface #intro h1 {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-size: 48px;
+      line-height: 57.6px; }
+    #interface #intro a {
+      background: white;
+      border-radius: 5px;
+      padding: 18px;
+      font-size: 14px;
+      overflow: hidden;
+      text-transform: uppercase;
+      color: #c8c8c8;
+      margin-bottom: 48px; }
+    #interface #intro img {
+      position: fixed;
+      bottom: 0;
+      left: calc(50% - 90px);
+      width: 180px;
+      z-index: 0; }
+
+#user-info {
+  height: 100%;
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative; }
+  #user-info h1 {
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-size: 48px;
+    line-height: 57.6px;
+    display: inline-block; }
+    #user-info h1 div {
+      display: inline-block;
+      opacity: .33; }
+
+/*# sourceMappingURL=welcome.css.map */

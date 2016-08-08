@@ -1,0 +1,89 @@
+/*	FLEXIE FRAMEWORK	*/
+/*	PABLO E. LUJAMBIO 	*/
+/*  RESET 				*/
+/* This part resets several stylesheet characteristics that are practical to reset. */
+
+*{
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	outline: 0;
+	margin:0 0;
+	padding:0 0;
+	width:auto; 
+	height:auto;
+	text-decoration:none;
+	font-weight:normal;
+    // background: none repeat scroll 0 0 transparent;
+    background: none;
+    border: medium none;
+    border-spacing: 0;
+    font-weight: normal;
+    text-decoration: none;
+    text-indent: 0;
+    overflow:none;   
+    box-sizing:border-box; 
+    position:relative;
+}
+
+section{
+	display:block;
+}
+a{
+	color:#FAFAFA;
+}
+html,
+body{
+	height:100%;
+	width:100%;
+}
+
+title, script{
+	display:none;
+}
+span{
+	margin:0;
+	padding:0;
+}
+/* INPUT FORMS RESET */
+textarea, 
+select, 
+input[type="date"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="email"], 
+input[type="month"], 
+input[type="number"], 
+input[type="password"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="text"], 
+input[type="time"], 
+input[type="url"], 
+input[type="week"]{
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	background-clip:padding-box;
+	-webkit-border-radius:0;
+	        border-radius:0;
+	background-color:none;
+	color:none;
+	outline:0;
+	margin:none;
+	padding:none;
+	text-align: left;
+	font-size:1em;
+	height: auto;
+	vertical-align: middle;
+	border-width:none;
+}
+input:not([type="checkbox"]) {
+	-webkit-appearance:none;
+}
+/*		FONT-SIZES 		*/
+	// h1{ font-size:72px; }
+	// h2{ font-size:56px; }
+	// h3{ font-size:48px; }
+	// h4{ font-size:36px; }
+	// h5{ font-size:24px; }
+	// h6{ font-size:18px; }
+	// p { font-size:21px; }
