@@ -1,9 +1,11 @@
 {
-  "name": "brenvita",
+  "name": "emprendeland-front",
   "version": "0.0.1",
-  "description": "magazine",
-  "dependencies": {},
+  "description": "EMF",
+  "dependencies": {
+  	"connect" : "*",
+  	"serve-static" : "*" 
+  },
   "devDependencies": {
-    "gulp-smushit": "^1.2.0"
   }
 }

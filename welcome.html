@@ -2,7 +2,12 @@
 <head>
 
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+
 
 <meta name="description" content="Conectando puntos entre emprendedores">
 <meta name="keywords" content="Emprendedores">
@@ -10,11 +15,19 @@
 <meta name="robots" content="all" />
 <meta name="googlebot" content="all" />
 
+
 <title>Emprendeland</title>
 
 <link rel="stylesheet" href="stylesheets/css/welcome.css">
 <!-- <link rel="stylesheet" href="stylesheets/application.css"> -->
-<!-- <script src="javascripts/jquery.js"></script> -->
+<script src="javascripts/jquery.min.js"></script>
+<script src="javascripts/gsap/TimelineMax.min.js"></script>
+<script src="javascripts/gsap/TweenMax.min.js"></script>
+<script src="javascripts/gsap/plugins/CSSPlugin.min.js"></script>
+<script src="javascripts/gsap/plugins/ScrollToPlugin.min.js"></script>
+<script src="javascripts/gsap/easing/EasePack.min.js"></script>
+<!-- <script src="javascripts/gasp/easing/EasePack.min.js"></script> -->
+
 <!-- <script src="javascripts/velocity.js"></script> -->
 <!-- <script src="javascripts/visible.js"></script> -->
 
@@ -23,13 +36,34 @@
 	
 <img src="images/logo.svg" alt="" id="logo">
 <div id="interface">
-<!-- 	<div id="intro">
-		<img src="images/hand-1.png" alt="">
-		<h1>Conectando puntos entre emprende-<br>dores.</h1>
-		<a>Encontrar mi equipo</a>
-	</div> -->
-	<div id="user-info">
-		<h1>Yo soy <br><div data-info="name">escribe tu nombre</div> y nací el <br><div data-info="day" contenteditable="true">20</div> de <div data-info="month" contenteditable="true">Julio</div><br> de <div data-info="year" contenteditable="true">1994</div></h1>
+</div>
+<div data-slide="1" id="intro">
+	<h1>Conectando puntos entre emprende-<br>dores.</h1>
+	<a>Encontrar mi equipo</a>
+	<img src="images/hand-1.png" alt="">
+</div>
+<div data-slide="2" id="user-info">
+	<h1><span>Yo soy </span><br><div data-info="name" contenteditable="true" data-placeholder="escribe tu nombre" tabindex="1"></div><span> y nací el </span><br><div data-info="day" contenteditable="true" data-placeholder="20" tabindex="2"></div><span> de </span><div data-info="month" contenteditable="true" data-placeholder="Julio" tabindex="3"></div><br><span> de </span><div data-info="year" contenteditable="true" data-placeholder="1994" tabindex="4"></div></h1>
+</div>
+<div data-slide="3" id="user-profile">
+	<div id="profile-options">
+		<div data-option="hustler" class="option-active">
+			<h1>Soy un<br>hustler</h1>
+			<p>Hago negocios y consigo inversión.</p>
+		</div>
+		<div data-option="designer" class="option-inactive">
+			<h1>Soy un<br>diseñador</h1>
+			<p>Hago que la gente use el producto; le facilito la vida a los usuarios.</p>
+		</div>
+		<div data-option="coder" class="option-inactive">
+			<h1>Soy un<br>coder</h1>
+			<p>Yo hago que las bases de datos funcionen. MV, whatever.</p>
+		</div>
+	</div>
+</div>
+<div data-slide="4" id="user-qualifications">
+	<div class="qualifications">
+		<h1>Tengo experiencia en</h1>
 	</div>
 </div>
 <div id="navigation">
@@ -38,5 +72,9 @@
 	<img src="images/check.svg" alt="" id="check">
 </div>
 
+<script src="javascripts/welcome.js"></script>
+
 </body>
+
+
 </html>
